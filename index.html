@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>שחר רכילות</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>שחר רכילות</h1>
+        <button id="adminLoginBtn">כניסת מנהל</button>
+    </header>
+
+    <main id="posts">
+        <!-- פוסט לדוגמה -->
+        <article class="post">
+            <h2>פגיעה ישירה בדירה של משפחת מתמודד "האח הגדול" - השכונה בהלם</h2>
+            <p>
+                טיל שנורה מאיראן פגע הבוקר בבניין מגורים בצפון באר שבע. אחת הדירות שנפגעו היא של משפחתו של שאול חכם, מתמודד בעונה הנוכחית של "האח הגדול".
+                למרבה המזל, לא היו פצועים בזכות השהייה בממ"ד, אך נגרם נזק רב לדירה ולבניין.
+                נכון לעכשיו, שאול עדיין לא עודכן על המקרה - וההפקה שוקלת מתי וכיצד לשתף אותו. משפחתו ביקשה לא להלחיץ אותו בשלב זה.
+                תושבי השכונה בהלם, והנזק נראה ברחובות.
+            </p>
+        </article>
+    </main>
+
+    <!-- ממשק ניהול -->
+    <div id="adminPanel" class="hidden">
+        <h2>ממשק ניהול פוסטים</h2>
+        <input type="text" id="postTitle" placeholder="כותרת הפוסט" />
+        <textarea id="postContent" placeholder="תוכן הפוסט"></textarea>
+        <button id="addPostBtn">הוסף פוסט</button>
+        <button id="closeAdminBtn">סגור</button>
+    </div>
+
+    <!-- מודל סיסמה -->
+    <div id="passwordModal" class="hidden">
+        <div class="modalContent">
+            <p>הכנס סיסמה:</p>
+            <input type="password" id="passwordInput" />
+            <button id="submitPasswordBtn">הכנס</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
